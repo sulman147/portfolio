@@ -45,6 +45,7 @@ const Header = () => (
       className="app__header-img"
     >
       <img src={images.profiletwo} alt="profile_bg" />
+
       <motion.img
         whileInView={{ scale: [0, 1] }}
         transition={{ duration: 1, ease: "easeInOut" }}
@@ -59,7 +60,20 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.node, images.react, images.redux, images.nest].map(
+      {[images.node, images.graphql, images.nest, images.angular].map(
+        (circle, index) => (
+          <div className="circle-cmp app__flex" key={`circle-${index}`}>
+            <img src={circle} alt="profile_bg" />
+          </div>
+        )
+      )}
+    </motion.div>
+    <motion.div
+      variants={scaleVariants}
+      whileInView={scaleVariants.whileInView}
+      className="app__header-circles2"
+    >
+      {[images.react, images.typescript, images.redux, images.amazon].map(
         (circle, index) => (
           <div className="circle-cmp app__flex" key={`circle-${index}`}>
             <img src={circle} alt="profile_bg" />

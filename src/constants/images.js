@@ -27,6 +27,8 @@ import nest from "../assets/nest.png";
 import profile from "../assets/profile.png";
 import circle from "../assets/circle.svg";
 import logo from "../assets/logo.png";
+import angular from "../assets/angular.png";
+import aws from "../assets/aws.png";
 import profiletwo from "../assets/profiletwo.png";
 import adidas from "../assets/adidas.png";
 import amazon from "../assets/amazon.png";
@@ -70,6 +72,8 @@ export default {
   adidas,
   amazon,
   asus,
+  aws,
+  angular,
   bolt,
   nb,
   skype,
